@@ -1,0 +1,232 @@
+.content-wrapper
+	.content
+		.row-1
+			.row-1__col-1
+				.slider
+					ul.slides
+						li.slide
+							.box
+								img(src="img/slide-3.png").box__img
+						li.slide
+							.box
+								img(src="img/slide-1.png").box__img
+						li.slide
+							.box
+								img(src="img/slide-2.png").box__img
+			.row-1__col-2
+				.time
+					span.icon-clock
+					.date-time
+						.date-time__clock 
+							span 18:01
+						.date-time__date 22.10.2014
+				.weather
+					.weather__temprature 
+						span 16&deg;
+					.weather__meteo
+						span.icon-wind
+						span.wind__value 2-3м/с
+						span.icon-sun
+						span.sun__value пасмурно
+				.account
+					form.account__form
+						.account__input-wrapper
+							span.icon-user
+							input(type="text" placeholder="логин").account__input-login#lg_login
+						.account__input-wrapper
+							span.icon-key
+							input(type="password" placeholder="пароль").account__input-psw#lg_password
+						input(type="submit" value="ВОЙТИ").account__submit-btn
+				.balance
+					input(type="text" placeholder="Введите номер лс или телефона").balance__input
+					button.balance__account-btn ЛИЦЕВОЙ СЧЕТ
+					<br>
+					button.balance__tel-btn ТЕЛЕФОН
+				.internet-switcher
+					a(href="#").internet-switcher__link
+						span.icon-switch
+					p.internet-switcher__desc интернет <span class="internet-switcher__indicator">включен</span>
+		.row-2
+			.row-2__col-1
+				.news
+					ul.news__list
+						li.news__item
+							.news-inner
+								.news-inner__header
+									.news-inner__date
+										span 25.10
+										|среда
+									.news-inner__title Должник, бойся отключения!
+								.news-inner__body
+									.news-inner__text Список адресов абонентов планируемых на отключение по дебиторской задолженности по услуге Аналогового телевидения. Для ознакомления со списком нажмите на данную надпись!
+									button.news-inner__readmore-btn.link подробнее
+						li.news__item
+							.news-inner
+								.news-inner__header
+									.news-inner__date
+										span 25.10
+										|среда
+									.news-inner__title Технические работы 16.09.2014г.
+								.news-inner__body
+									.news-inner__text Уважаемые пользователи! В связи с проведением технических работ 16.09.2014г. с 13:30 до 16:00 будет отсутствовать предоставление услуги передачи данных в районе Талнах.
+									button.news-inner__readmore-btn.link подробнее
+						li.news__item
+							.news-inner
+								.news-inner__header
+									.news-inner__date
+										span 25.10
+										|среда
+									.news-inner__title Фотоконкурс «Россия-это ли не рай»
+								.news-inner__body
+									.news-inner__text Конкурс фотографий «Россия-это ли не рай» организован Фондом «Миротворец». Цели конкурса: Основными целями конкурса являются популяризация культурного наследия народов Российской Федерации
+									button.news-inner__readmore-btn.link подробнее
+				.advertise
+					.advertise__icon-1
+						img(src="img/srok-podkl.png")
+					.advertise__icon-2
+						img(src="img/24-7.png")
+					.advertise__icon-3
+						img(src="img/paket-icon.png")
+			.row-2__col-2
+				a(href="#").job
+					.job__stat
+						span.icon-article
+						span.job__stat__resume > 1000 резюме
+						span.icon-briefcase-job
+						span.job__stat__vacancies > 1000 вакансий
+					p.job__slogan.link портал для тех, кто ищет работу
+				a(href="").cinema
+					.cinema__header
+						span.icon-video-camera<br/>
+						|КИНОАФИША 
+					.cinema__afisha
+						img(src="img/kino.jpg").cinema__afisha-img
+		.row-3
+			.row-3__col-1
+				.row-3__col-1__col-1
+					.forum-stat
+						.forum-stat__topics
+							.forum-stat__counter 368
+							.forum-stat__desc топиков
+							span.icon-bubble2
+						.forum-stat__users
+							.forum-stat__counter 1965
+							.forum-stat__desc юзеров
+							span.icon-users
+					.transfer
+						.transfer__title TRANSFER
+						.transfer__desc быстрая публикация<br/>файлов в сети
+						.transfer__download
+							.transfer__download-link 
+								a(href="") загрузить файл
+							.transfer__download-img
+								img(src="img/download-icon.png")
+				.forum
+					.forum__title
+						span.icon-bubbles4
+						|ФОРУМ
+					ul.topics
+						li.topics__item
+							table
+								tr
+									td.topics__ava
+										img(src="img/ava-1.png")
+									td.topics__name
+										a(href="#") Опрос: Что лучше? IPhone или Samsung galaxy
+						li.topics__item
+							table
+								tr
+									td.topics__ava
+										img(src="img/ava-2.png")
+									td.topics__name
+										a(href="#") Опрос: Вопросы от пользователей связанные с сетевыми настройками, оплатой услуг, ADSL модемами.
+						li.topics__item
+							table
+								tr
+									td.topics__ava
+										img(src="img/ava-1.png")
+									td.topics__name
+										a(href="#") Сайты, странички, сервисы в сети, и другие неофициальные сервера.
+						li.topics__item
+							table
+								tr
+									td.topics__ava
+										img(src="img/ava-2.png")
+									td.topics__name
+										a(href="#") Различные видео-шоу, которые схожи по смыслу и у которых более чем 2 серии.
+					button.forum__goto ПЕРЕЙТИ
+			.row-3__col-2
+				.video
+					video(width="479" height="310" controls="controls" poster="img/video.png")
+						source(src="video/videoplayback.mp4")
+		.row-4
+			.row-4__col-1
+				.notice-board
+					.notice-board__title ДОСКА ОБЪЯВЛЕНИЙ
+					p.notice-board__categories
+						ul.notice-board__list
+							li.notice-board__list
+								a(href="#").notice-board__link Продам /
+							li.notice-board__list
+								a(href="#").notice-board__link Куплю /
+							li.notice-board__list
+								a(href="#").notice-board__link Услуги /
+							li.notice-board__list
+								a(href="#").notice-board__link Помощь /
+							li.notice-board__list
+								a(href="#").notice-board__link Домашние животные /
+							li.notice-board__list
+								a(href="#").notice-board__link Работа
+					.notice-board__btn-wrap
+						button.notice-board__btn.publish-btn ПОДАТЬ
+						button.notice-board__btn.find-btn НАЙТИ
+				.cooker
+					.cooker__desc кулинарный портал
+					.cooker__title COOKER
+					.cooker__btn-wrap
+						button.cooker__btn хочу приготовить!
+			.row-4__col-2
+				.mailbox
+					form(action="").mailbox__form
+						input(type="text" placeholder="ЛОГИН").mailbox__login
+						input(type="password" placeholder="ПАРОЛЬ").mailbox__psw
+						input(type="submit" value="ПРОВЕРИТЬ").mailbox__submit
+						a(href="#").mailbox__link
+							|перейти к почтовому серверу
+				.advertise-2
+					.advertise-2__logo
+						img(src="img/logo-nt.png")
+					a(href="#").advertise-2__link.link www.norilsktelecom.ru
+		.row-5
+			.row-5__col-1
+				.feedback
+					.feedback__title Обратная связь
+					form.feedback-form
+						.feedback-form__from-to
+							input(type="text" name="from" placeholder="Ваше имя").feedback-form__input-from
+							select(name="to" required).feedback-form__select-to
+								option(disabled)
+									|Выберите адресата
+								option(value="тех поддержка" selected)
+									|Тех поддержка
+								option(value="коммерческий блок")
+									|Коммерческий блок
+								option(value="администрация")
+									|Администрация
+						textarea(name="message" id="message" class="feedback-form__textarea" placeholder="Кратко, в чем суть")
+						button(type="submit").feedback-form__submit ОТПРАВИТЬ
+					.feedback__plane
+						img(src="img/sparrow.png")
+				.wiki
+					.wiki__title ВИКИПЕДИЯ
+					.wiki__desc Общедоступная мультиязычная<br/>универсальная интернет-энциклопедия
+					.wiki__search-wrap
+						.wiki__search
+							p Что ищем?
+							span.icon-search-wiki
+							input(type="search" placeholder="интерференция, например...").wiki__search-input
+			.row-5__col-2
+				a(href="#").wifi
+					p.wifi__title Wifi-зона у вас дома!
+					p.wifi__desc У вас дома есть компьютер, ноутбук, планшет, мобильный телефон и вы хотите выходить в сеть и Интернет из любой точки квартиры? Тогда аренда WI-FI-роутера от НОРКОМ для вас!
+				a(href="#").advertise-3

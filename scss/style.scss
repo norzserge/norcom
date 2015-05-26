@@ -1,0 +1,90 @@
+/* fonts */
+
+@font-face {
+    font-family: 'HeliosCond';
+    src: url('../fonts/helCondN.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HeliosCondBold';
+    src: url('../fonts/helCondB.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Exposure';
+    src: url('../fonts/exposure.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Franklin';
+    src: url('../fonts/franklin.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* colors */
+
+$greenColor:#61e366;
+$orangeColor:#efba54;
+$blueColor:#4eb4f4;
+$redColor:#f93f2d;
+$pinkColor:#ed4759;
+
+/* mixins */
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin transition-links($sec) {
+  -webkit-transition: color $sec ease;
+     -moz-transition: color $sec ease;
+      -ms-transition: color $sec ease;
+       -o-transition: color $sec ease;
+          transition: color $sec ease;
+}
+
+/* grid styles */
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+.page {
+    background: #ffffff url('../img/back-bg.png') no-repeat 50% 0;
+    background-attachment: fixed;
+    background-color: #fff;
+    background-size:100% 100%;
+    font-size:100%;
+    min-width: 960px;
+}
+.page-wrap {
+    padding: 0 5px;
+    max-width: 1280px;
+    min-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    cursor: auto;
+    font-family: 'HeliosCond';
+    display: table;
+    border-collapse: collapse;
+} 
+/* main styles */
+a {
+    color:#000;
+    text-decoration: none;
+    @include transition-links(0.2s);
+}
+.link {
+    text-decoration: none;
+    outline: none;
+}
+.wiki__search-input input[placeholder]          {color:#5d5d5d; font-size: 12px; font-style: italic;}
+.wiki__search-input input::-moz-placeholder     {color:#5d5d5d; font-size: 12px; font-style: italic;} 
+.wiki__search-input input:-moz-placeholder      {color:#5d5d5d; font-size: 12px; font-style: italic;} 
+.wiki__search-inputinput:-ms-input-placeholder {color:#5d5d5d; font-size: 12px; font-style: italic;}  
